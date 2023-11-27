@@ -1,0 +1,30 @@
+.forWhat
+    overflow: visible !important
+    background: $Background
+    padding-top: 180px
+    
+.cards_services
+    margin-bottom: 50px
+
+.card_services
+    padding: 150px 40px 50px
+    background-color: $White
+    border-radius: $baseRadius
+    .card_img
+        position: absolute
+        top: -145px
+        left: 100px
+        width: 70%
+        height: auto
+
+@media (max-width: 800px)
+    .forWhat
+        padding-top: 20px
+    .cards_services
+        flex-direction: column !important
+        border-radius: $baseRadius / 2 !important
+    .card_services .card_img
+        left: 15%
+        top: -40px
+    .cards_services > div:first-child
+        margin-bottom: 100px

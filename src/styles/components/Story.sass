@@ -1,0 +1,37 @@
+
+
+.story
+    .photoWrapper
+        margin-top: 5%
+    .subtitle
+        margin-top: 5%
+
+.story-1
+    .subtitle 
+        margin-top: 5px
+.story-4
+    img 
+        margin-bottom: 3%
+
+// Reverse setup
+.story.reverse
+    flex-direction: column-reverse !important
+    .container 
+        flex-direction: row-reverse
+.story-1.reverse
+    .text
+        margin-top: 3%
+.story-4.reverse 
+    .text
+        margin-bottom: 5%
+.story-5.reverse
+    .text
+        padding: 50px
+
+// Mobile styles
+@media (max-width: 800px)
+    .story-5
+        .container
+            flex-direction: column-reverse
+        .text 
+            padding: 0px !important

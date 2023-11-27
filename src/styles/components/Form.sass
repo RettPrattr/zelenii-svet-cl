@@ -1,0 +1,156 @@
+@media(max-width: 1000px)
+	.error-container
+		top: -12px !important
+		span
+			font-size: 3vw !important
+	.formblock
+		padding: 20px !important
+	.form
+		width: 100% !important
+		.input-container
+			width: 90% !important
+
+@media ( min-width: 1700px )
+
+	.form
+		width: 460px !important
+
+.form
+	span
+		font-weight: 500 !important
+	h2, p, span
+		color: $White
+	.popup
+		display: none
+		&.active
+			display: flex
+			position: fixed
+			left: 0
+			top: 0
+			justify-content: center
+			align-items: center
+			width: 100%
+			height: 100vh
+			background-color: RGBA(0,0,0,0.7)
+			z-index: 999 !important
+			.popup-container
+				background-color: #fff
+				padding: 15px 25px
+				margin: auto auto
+				width: 350px
+				border-radius: 9px
+				.action
+					padding: 8px 18px !important
+				p 
+					color: $DarkedMain
+				a
+					// padding: 4px 8px
+					// font-weight: 300 !important
+
+	.input-field
+		.input-container
+			height: 50px
+			background-color: #f5f4f433
+			border-radius: 1000px
+			.label, .label2
+				&.animate
+					opacity: 0
+					transition: all .2s ease 
+		input
+			border: 0
+			outline: none
+			height: 50px
+			// opacity: 0.1
+			// font-size: 12px
+			overflow: visible
+			// font-size: 1.111vw 
+			color: white
+			margin-left: 30px
+			background-color: transparent
+			width: 100%
+
+		.error-container
+			width: fit-content
+			height: fit-content
+			top: -15px
+			left: 23px
+			padding: 2px 7px
+			// transition: all .2s ease-in-out
+			border-radius: 1000px
+			background-color: #FBFBFB
+			.error-message
+				font-size: $baseFontSize - 2px
+				color: $DarkedMain
+				width: 100% !important
+				
+
+
+
+		label
+			position: absolute
+			left: 30px
+			top: 15px
+			overflow: visible
+			white-space: nowrap
+			z-index: 1
+			opacity: 0.9
+			color: $White
+			pointer-events: none
+			transition: all 0.2s cubic-bezier(0.55, 0.055, 0.675, 0.19)
+
+	.form-button
+		height: auto
+		z-index: 1000 !important
+		button
+			transition: all 0.2s ease-out
+			border-radius: 1000px
+			background-color: $White
+			z-index: 50
+			a 
+				color: $Main
+			&:hover
+				background-color: $DarkedMain
+				a 
+					color: $White
+			&.disabled
+				opacity: 0.75
+				z-index: 50
+
+
+
+
+
+
+
+/// FORMBLOCK
+
+.formblock
+	margin-top: 0px
+	padding: 30px 60px
+	border-radius: $baseRadius
+	width: 100%
+	height: 100%
+	background-size: cover !important
+	background-position: center
+	object-fit: cover
+	background-size: cover
+	overflow: hidden
+	.woman
+		z-index: 1000 !important
+		width: 450px
+		left: 650px
+		top: 100px
+	// transform-style: preserve-3d
+	// transform: skew(1deg) perspective(100px) rotateY(-0.5deg) 
+	.formblock-container
+		padding-left: 50px
+	&.wide div
+		flex-direction: row !important
+.form-card 
+	border-radius: $baseRadius !important
+	overflow: hidden !important
+	
+
+@media (max-width: 800px)
+	.form-card 
+		border-radius: 0 !important

@@ -1,0 +1,29 @@
+.popup, .overlay
+    width: 100%
+    height: 100%
+    top: 0
+    left: 0
+
+.popup
+    position: fixed
+    z-index: 9999
+    padding: $baseRadius / 2
+    & > div 
+        z-index: 100
+        padding: 0
+        margin: 0 auto
+        height: fit-content
+        & > div
+            margin: 0
+    .container 
+        background: $Main
+
+.overlay
+    position: absolute
+    height: 100% !important
+    z-index: 99 !important
+    background: rgba(0, 0, 0, 0.4)
+
+.popup-form
+    .form-card
+        border-radius: $baseRadius !important

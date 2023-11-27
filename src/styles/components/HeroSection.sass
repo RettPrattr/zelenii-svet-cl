@@ -1,0 +1,75 @@
+.hero
+    // background: var(--bg-pic)
+    background-size: cover
+    padding-bottom: 0px
+    b
+        font-size: $baseFontSize * 3.5
+        background: $White
+        color: $DarkedMain
+        padding: 0 30px
+        margin-left: -30px
+        border-radius: 110px
+        white-space: nowrap
+
+    &__title
+        color: $White !important
+        margin-bottom: 10px
+        font-weight: 400
+        line-height: 1
+
+    p
+        margin-top: 15px
+        margin-bottom: 34px
+        color: $White
+
+    
+    .span-param
+        color: $White
+        font-weight: 600
+
+    .womanPhoto
+        img
+            transform: translateY(5px)
+            height: 120%
+    
+    .block 
+        padding-bottom: 130px
+
+    .params
+        h3
+            margin-bottom: 15px
+        h3, span
+            color: $White
+        span
+            font-size: $baseFontSize * 2
+
+    .container
+        padding: 80px 20px 0px 0px
+        &.uslugi
+            padding: 80px 20px 0 0px
+
+@media (max-width: 800px)
+    .hero.uslugi
+        padding: 0 !important
+    .hero 
+        .womanPhoto.photo-services
+            width: 280px !important
+            height: 250px !important
+            margin-left: auto !important
+            margin-right: auto !important
+            img
+                margin: 0px auto 0 auto
+                width: 280px !important
+                height: 278px !important
+        .container
+            padding: 40px 20px 230px
+            span
+                padding: 0 20px
+                margin-left: -15px
+            &.uslugi
+                padding: 20px 20px 0px 20px
+        b
+            font
+
+        .block 
+            padding-bottom: 0px

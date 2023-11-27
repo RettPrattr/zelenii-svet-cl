@@ -1,0 +1,54 @@
+.story .photoWrapper {
+  margin-top: 5%;
+}
+
+.story .subtitle {
+  margin-top: 5%;
+}
+
+.story-1 .subtitle {
+  margin-top: 5px;
+}
+
+.story-4 img {
+  margin-bottom: 3%;
+}
+
+.story.reverse {
+  -webkit-box-orient: vertical !important;
+  -webkit-box-direction: reverse !important;
+      -ms-flex-direction: column-reverse !important;
+          flex-direction: column-reverse !important;
+}
+
+.story.reverse .container {
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: reverse;
+      -ms-flex-direction: row-reverse;
+          flex-direction: row-reverse;
+}
+
+.story-1.reverse .text {
+  margin-top: 3%;
+}
+
+.story-4.reverse .text {
+  margin-bottom: 5%;
+}
+
+.story-5.reverse .text {
+  padding: 50px;
+}
+
+@media (max-width: 800px) {
+  .story-5 .container {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: column-reverse;
+            flex-direction: column-reverse;
+  }
+  .story-5 .text {
+    padding: 0px !important;
+  }
+}
+/*# sourceMappingURL=Story.css.map */

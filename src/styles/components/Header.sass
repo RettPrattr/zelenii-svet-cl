@@ -1,0 +1,272 @@
+@media (min-width: 800px)
+    #services
+        pointer-events: none
+
+    
+.header  
+    background: $White
+    position: fixed
+    z-index: 1000 
+    top: 0
+    right: 0
+    left: 0
+    width: 100%
+    transition: all .2s linear
+    &.down
+        top: -145px
+    
+
+    &-social
+
+        background: $White
+        border-radius: 13px
+        padding: 10px
+
+        a:not(:last-child)
+            margin-right: 10px
+        a
+            display: flex
+            align-items: center
+            justify-content: center
+            width: 40px
+            height: 40px
+            background: $Main
+            border-radius: 10px
+
+        img
+            width: auto
+            height: auto
+
+    &__burger, &-mob
+        display: none
+
+    &__logo
+        max-width: 156px
+        object-fit: contain !important
+
+    .cover
+        .videoBack
+            height: 100% !important
+            border-radius: 1000px !important
+            overflow: hidden !important
+            video
+                height: 100% !important
+                border-radius: 1000px !important
+                overflow: hidden !important
+    &__menu
+        
+        &-container
+            position: relative
+        &.sevices-open
+
+        gap: 10px
+        max-width: 575px
+        width: 100%
+
+        &-item
+            color: $DarkedMain
+            &:hover
+                opacity: .8
+
+        button
+            -webkit-appearance: button
+            // height: 60px
+            color: $Main
+            background-color: transparent
+            border-radius: 10px
+            outline: none
+            border: none
+            // padding: 10px 15px
+            cursor: pointer
+            width: 96%
+            text-align: left
+            display: flex
+            justify-content: space-between
+            align-items: center
+
+            a
+                text-decoration: none
+                color: $DarkedMain
+                margin-right: 10px
+
+        button path
+            fill: $DarkedMain
+
+        .sub-menu 
+            position: absolute
+            top: 20px
+            left: -35px
+            transform: translateX(-20px)
+            padding: 30px 30px 10px 35px
+            background-color: $White
+            border-radius: 6px
+            transform-origin: 50% -30px
+
+
+        .sub-menu-background 
+            position: absolute
+            pointer-events: none
+            top: 0
+            right: 0
+            bottom: 0
+            left: 0
+            transform-origin: 0 0
+            box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04)
+
+
+        .sub-menu-item 
+            color: $DarkedMain
+            width: max-content
+            position: relative
+            &:hover
+                color: $Main
+
+    @media (min-width: 800px) 
+        .sub-menu-item::after
+            position: absolute
+            content: ''
+            width: 10px
+            height: 10px
+            background: $White
+            border: 2px solid $Gray
+            display: block
+            border-radius: 100px
+            top: 3px
+            left: -20px
+            transition: all 0.2s linear
+        .sub-menu-item:hover
+            &::after
+                background: $Main
+                border: 2px solid $White
+
+
+    .popup
+        display: none
+        &.open
+            display: block
+
+    @media(max-width: 1000px)
+        &__menu, .action
+            display: none
+
+        &__burger
+            display: flex
+            flex-direction: column
+            gap: 5px
+            width: 40px
+            cursor: pointer
+            span
+                height: 3px
+                background: $Main
+                border-radius: 3px
+                transition: all .7s
+
+                &:nth-child(2)
+                    width: 29px
+                    transition: all .3s
+
+            &--open
+                span:nth-child(1)
+                    transform-origin: top left
+                    transform: rotate(45deg) translateY(-9px)
+                    width: 30px
+                span:nth-child(3)
+                    transform: rotate(-45deg) translateX(4px) translateY(-3px)
+                    width: 30px
+                span:nth-child(2)
+                    display: none
+                    
+
+        &-mob
+            display: block
+            // position: absolute
+            visibility: hidden
+            z-index: 100
+            opacity: 0
+            transition: all .7s
+            top: 115px
+            min-height: calc(100vh - 48px)
+            right: 0
+            left: 0
+            // margin-top: 84px
+            &.false
+                display: none
+
+            &--open
+                opacity: 1
+                visibility: visible
+                background: rgba(3, 3, 3, 0.7)
+
+                .action
+                    display: inline-flex
+                    margin: 0 auto
+                    padding: 13px 30px
+                    font-size: 16px
+                    width: 182px
+            .header
+                &__menu
+                    display: flex
+                    flex-direction: column
+                    gap: 30px
+                    &-item
+                        transition: all .2 ease
+                        
+                    &.services-open
+                        gap: 15px
+                    .sub-menu-background 
+                        box-shadow: none 
+                    .sub-menu
+                        padding-top: 15px
+                        padding-bottom: 0
+                        top: 0
+                        position: relative
+                        a
+                            text-align: left
+                            font-weight: 400
+                            font-size: 18px 
+                    a
+                        color: $Main
+                        font-size: 20px
+                        font-weight: bold
+                        text-align: center
+                    p
+                        color: $Main
+                        font-size: 16px
+                        font-weight: normal
+                        text-align: center
+                    button
+                        -webkit-appearance: button
+                        // height: 60px
+                        color: $Main
+                        background-color: transparent
+                        border-radius: 10px
+                        outline: none
+                        border: none
+                        // padding: 10px 15px
+                        cursor: pointer
+                        width: 30%
+                        text-align: left
+                        display: flex
+                        justify-content: space-between
+                        align-items: center
+                        a
+                            text-decoration: none
+                            color: $Main
+
+                    button path
+                        fill: $Main
+
+                    
+
+                &-mob__menu
+                    min-height: calc(100vh - 65px)
+                    margin-left: auto
+                    padding: 40px 20px 
+                    flex-direction: column
+                    display: flex
+                    justify-content: space-between
+                    background-color: $White
+                    &.services-open
+                        padding: 15px 20px
+
+                

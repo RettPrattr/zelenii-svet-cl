@@ -1,0 +1,366 @@
+@media ( max-width: 800px )
+
+	/// TURN OFF HOVER
+	.header
+		a
+			&:hover
+				opacity: 1 !important
+
+
+
+	.container
+		width: calc(100vw - 40px) !important
+		padding: 0
+
+	.cont-padding-l-r
+		padding-left: 20px !important
+		padding-right: 20px !important
+
+
+	.cont-padding
+		padding: 20px !important
+
+
+	///////// COMPONENTS /////////
+
+	.bar, .burger
+		display: block
+
+	.bar
+		height: 2px
+
+	.burger
+		margin-top: 20px
+
+
+	.button
+		height: 'auto'
+		background-color: #70BC24
+		border-radius: 12px
+		box-shadow: 0px 10px 10px rgba(112, 188, 36, 0.2)
+		// &:hover
+		// 	background-color: #70BC24 !important
+		// a
+		// 	color: #fff
+		// 	display: flex
+		// 	justify-content: center
+		// 	align-items: center
+		// 	padding: 17px 0
+		// 	font-weight: 700 !important
+
+
+	/// CALCBLOCK
+
+
+	
+	/// COMPLETESETBLOCK
+
+	.completesetblock
+		margin-top: 20px
+
+
+	/// CONTACTSMAPBLOCK
+
+	.contactsblock
+		padding-bottom: 20px
+		p
+			margin-bottom: 15px
+		.info
+			flex-direction: flex-col !important
+			.left-side, .right-side
+				width: 100%
+		.heading
+			margin-top: 30px
+
+
+	.form-button
+		button
+			border-radius: 12px !important
+
+
+	/// FORMBLOCK
+
+	.formblock
+		margin-top: 20px
+		.formblock-container
+			padding-left: 15px
+
+
+	/// FOOTER
+
+	// .footer
+	// 	padding: 20px !important
+	// 	.footer-cont
+	// 		flex-direction: column !important
+	// 		padding-bottom: 0px !important
+	// 	.footer-cols
+	// 		margin-bottom: 15px
+	// 	svg
+	// 		width: 280px !important
+	// 		height: auto !important
+	// 		margin-bottom: 20px
+	// 	a
+	// 		font-size: 4vw !important
+	// 		margin-bottom: 5px !important
+	// 		&:hover
+	// 			opacity: 1 !important
+
+
+
+	/// DISABLE SCROLL AND FIX BURGER CONTENT
+
+	body, html
+		&.burger-open
+			-ms-overflow-style: none
+			scrollbar-width: none
+		&.burger-open::-webkit-scrollbar
+			display: none
+
+
+	/// HEADER
+	////// ЭФФЕКТ МАТОВОГО СТЕКЛА //////
+	.header
+		.msk
+			display: none !important
+		&.active
+			height: 100vh !important
+			position: fixed
+			background-color: #fff
+			// overflow-y: hidden !important
+		.info
+			display: none
+			margin-top: 40px
+			width: 100% !important
+			flex-direction: column
+			align-items: flex-start !important
+			&.active
+				display: flex
+				.button
+					width: 50% !important
+					margin-top: 2px
+				.info-text
+					margin-top: 40px
+					align-items: flex-start
+					width: 50%
+					flex-direction: column
+		.logo-mobile
+			display: block !important
+			transform: translate3d(0, -10px, 0)
+			svg
+				width: 175px
+
+		.logo
+			display: none !important
+		.header-bottom
+			background: #fff
+			justify-content: center !important
+			display: none !important
+			a
+				display: none
+				&:hover
+					opacity: 1 !important
+			&.active
+				a
+					display: flex !important
+					width: 100%
+					flex-direction: column
+					color: #000
+					font-size: 8vw !important
+					margin-left: 0 !important
+					margin-bottom: 15px
+
+
+	.halftexthalfphoto
+		margin-top: 30px
+		margin-bottom: 30px
+		.photo
+			margin-right: 0px
+		.photo, .text
+			width: 100%
+		.text
+			margin-top: 15px
+			p
+
+				margin-bottom: 15px
+
+
+	/// HEADINGTEXT
+
+	.headingtext, .heading
+		h2
+			padding: 0
+			margin-bottom: 15px
+		p
+			margin-top: 0 !important
+
+
+	/// FORM
+
+	.input-field
+		input
+			margin-bottom: 5px !important
+		span
+			font-size: 3.5vw !important
+		label
+			font-size: 5vw !important
+
+
+	/// FOURSTATS
+
+	.fourstats
+
+		div
+			width: 50%
+			max-width: 50%
+			margin-bottom: 30px
+			.black
+				color: #000
+				margin-bottom: 15px
+
+			.green
+				font-size: 6vw
+
+
+	/// NEWS
+
+	.news
+		width: 100%
+
+
+	/// NEWSLINE
+
+	.newsline
+		padding-top: 23px
+		padding-bottom: 23px
+		p
+			margin-bottom: 5px
+
+
+	/// OUR
+
+	.our
+		img
+			margin-bottom: 10px
+		.our-col-heading
+			font-size: 6vw
+			margin-bottom: 5px
+		.our-item
+			width: 100%
+		.our-item:not(:last-child)
+			margin-right: 0px
+			margin-bottom: 40px
+
+
+
+	/// PHOTO
+
+	.about-photo
+		img
+			height: 300px
+
+
+
+	/// PHOTOTEXT
+
+	.phototext
+		width: 100% !important
+		margin-top: 40px
+		margin-bottom: 40px
+		.phototext-image
+			margin-bottom: 20px
+
+
+	.photoblock
+		.photo
+			width: 100%
+		.photo, .photo-2
+			margin-right: 0
+
+	/// PROJECT
+
+	.project
+		width: 100%
+		.project-top-text
+			margin: 20px 25px !important
+
+
+	/// STATITEM
+
+	.statitem
+		h2
+			font-size: 22vw !important
+
+
+	/// SLIDER
+
+	.slider
+		.flickity-page-dots .dot
+			height: 6px !important
+			width: calc(31% - 16px) !important
+
+
+
+
+	/// STORY
+
+	.story
+		.heading
+			h2
+				margin-bottom: 20px
+		.photostory, .storytext
+			width: 100%
+		.storytext
+			margin-top: 20px
+			margin-left: 0
+
+
+	/// TABS
+
+	.tabs
+		margin-bottom: 10px !important
+		margin-top: 30px
+		// li:not(:last-child)
+		// 	margin-right: 0px !important
+		.tabs-item
+			margin-bottom: 10px
+			margin-right: 10px !important
+			// width: 50% !important
+		.tabs-button::after
+			bottom: -7px
+		// .tabs-nav::after
+		// 	display: none !important
+
+	.tabs-content
+		align-items: center
+		.photo50
+			margin-top: 15px
+			margin-right: 0
+		.text50
+			margin-top: 20px
+		.text50, .photo50
+			width: 100%
+
+
+	.tabs-nav
+		padding-bottom: 0px !important
+		.tabs-button
+			width: fit-content !important
+
+
+	/// THREE PARAMETRES
+
+	.threeParams
+		padding: 40px 15px
+		flex-direction: column
+		align-items: flex-start
+		.stat
+			width: 100%
+			margin-bottom: 20px
+
+
+	/// VIDEO
+
+	.video-player
+		div
+			height: 220px !important
+

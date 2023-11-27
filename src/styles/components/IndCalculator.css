@@ -1,0 +1,162 @@
+.indcalcblock {
+  width: 50%;
+  disaply: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin: 0 auto;
+}
+
+.indcalcblock .calcblock-left .top-text {
+  width: 100%;
+  margin-bottom: 60px;
+}
+
+.indcalcblock .calcblock-left .top-text h2 {
+  color: var(--dark-green);
+  margin-bottom: 10px;
+}
+
+.indcalcblock .calcblock-left .top-text span {
+  color: var(--light-green);
+}
+
+.indcalcblock .calcblock-left .top-text p {
+  font-weight: 400;
+  width: 85%;
+  color: var(--gray);
+  font-size: 16px;
+}
+
+.indcalcblock .calcblock-left .main .menu {
+  color: white;
+  width: 300px;
+  height: auto;
+  position: relative;
+  overflow: visible;
+  z-index: 999;
+}
+
+.indcalcblock .calcblock-left .main .menu ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  position: absolute;
+  gap: 10px;
+  width: 100%;
+  background: var(--light-green);
+}
+
+.indcalcblock .calcblock-left .main .menu ul.close {
+  display: none;
+}
+
+.indcalcblock .calcblock-left .main .menu li {
+  color: white;
+  display: block;
+}
+
+.indcalcblock .calcblock-left .main .menu ul,
+.indcalcblock .calcblock-left .main .menu li {
+  list-style: none;
+  margin: 0;
+  padding: 10px;
+}
+
+.indcalcblock .calcblock-left .main .menu button {
+  -webkit-appearance: button;
+  background: var(--light-green);
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  padding: 10px 20px;
+  cursor: pointer;
+  width: 100%;
+  text-align: left;
+  margin-bottom: 10px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.indcalcblock .calcblock-left .main .menu button a {
+  text-decoration: none;
+  color: white;
+}
+
+.indcalcblock .calcblock-left .main .menu button path {
+  fill: #fff;
+}
+
+.indcalcblock .calcblock-left .main .service-and-rate .service, .indcalcblock .calcblock-left .main .service-and-rate .rate {
+  margin-bottom: 10px;
+}
+
+.indcalcblock .calcblock-left .main .service-and-rate .service .p-top, .indcalcblock .calcblock-left .main .service-and-rate .rate .p-top {
+  margin-bottom: 10px;
+}
+
+.indcalcblock .calcblock-left .main .service-and-rate .service {
+  margin-right: 60px;
+}
+
+.indcalcblock .calcblock-left .main .service-and-rate .rate-value {
+  color: var(--light-green);
+}
+
+.indcalcblock .calcblock-left .main .sum, .indcalcblock .calcblock-left .main .term {
+  margin-top: 40px;
+}
+
+.indcalcblock .calcblock-left .main .sum .calc-input, .indcalcblock .calcblock-left .main .term .calc-input {
+  margin-top: 20px;
+  height: 60px;
+  background-color: #FBFBFB;
+  border-radius: 10px;
+  outline: none;
+  border: none;
+  padding: 10px 15px;
+  font-size: 18px;
+}
+
+.indcalcblock .calcblock-left .main .ind-calc {
+  margin-top: 30px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.indcalcblock .calcblock-left .main .ind-calc img {
+  width: 25px;
+  height: 25px;
+  margin-right: 10px;
+}
+
+.indcalcblock .calcblock-left .main .ind-calc a {
+  color: var(--light-green);
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+  border-bottom: 1px solid var(--light-green);
+  -webkit-transition: .3s all ease;
+  transition: .3s all ease;
+}
+
+.indcalcblock .calcblock-left .main .ind-calc a:hover {
+  opacity: 0.69;
+}
+
+.indcalcblock .calcblock-left .main p {
+  color: var(--gray);
+}
+/*# sourceMappingURL=IndCalculator.css.map */

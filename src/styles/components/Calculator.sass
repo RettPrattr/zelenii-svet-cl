@@ -1,0 +1,346 @@
+.bc-white-container
+	background-color: #fff
+
+.calcblock
+	margin-top: 60px
+	width: 100%
+	height: 100%    
+	padding: 80px 20px 80px 20px
+	max-width: 1280px !important
+	margin: 0 auto
+
+	.popup
+		display: none
+		&.active
+			position: fixed
+			left: 0
+			top: 0
+			width: 100%
+			height: 100vh
+			background-color: RGBA(0,0,0,0.7)
+			// z-index: 999 !important
+			.popup-container
+				background-color: #fff
+				padding: 15px 25px
+				margin: auto auto
+				width: 350px
+				border-radius: 9px
+				.popup-text
+					margin-bottom: 15px
+					.ok-button-container
+						display: flex
+						justify-content: flex-end !important
+						.ok-button
+							width: fit-content
+							a
+								padding: 4px 8px
+								font-weight: 300 !important
+
+	.calcblock-left
+		width: 60%
+
+	.calcblock-right
+		width: 40%
+	.calcblock-left 
+		.top-text
+			width: 100%
+			margin-bottom: 10px
+			h2
+				margin-bottom: 10px
+			span
+				color: $Main
+			p
+				width: 85%
+				font-weight: 400
+				color: $LightedBlack
+				font-size: 16px
+		.main
+			.menu
+				// background: #688DD6
+				color: black
+				height: auto
+				position: relative
+				overflow: visible
+				padding-left: 0 !important
+				padding-right: 0 !important
+				// z-index: 999
+				// margin-top: 300px
+				ul
+					display: flex
+					flex-direction: column
+					position: absolute
+					gap: 10px
+					width: 100%
+					color: black
+					background-color: #FBFBFB
+					border-radius: 10px
+					outline: none
+					border: 1px solid #9da0a8
+					&.close
+						display: none
+
+				li
+					color: black
+					display: block
+					position: relative
+					&.active::after
+						content: ''
+						position: absolute
+						width: 10px
+						height: 10px
+						border-radius: 1000px
+						left: 93%
+						top: 35%
+						z-index: 1000 !important
+						background-color: $Main
+
+				ul,
+				li
+					list-style: none
+					margin: 0
+					padding: 10px
+
+				button
+					-webkit-appearance: button
+					height: 60px
+					color: black
+					background-color: #FBFBFB
+					border-radius: 10px
+					outline: none
+					border: 1px solid #9da0a8
+					padding: 10px 15px
+					cursor: pointer
+					width: 100%
+					text-align: left
+					margin-bottom: 10px
+					display: flex
+					justify-content: space-between
+					align-items: center
+					a
+						text-decoration: none
+						color: black
+
+
+				button path
+					fill: #000
+
+			.service-and-rate
+				.service
+					margin-bottom: 10px
+					.p-top
+						margin-bottom: 10px
+				.service
+					margin-right: 60px
+				.rate-value
+					color: $Main
+					// font-size: 36px
+					font-weight: 600
+			.sum, .term, .rate
+				margin-top: 0px
+				height: fit-content
+				.param-name
+					transform: translate3d(22px, 47px, 0)
+					width: fit-content
+					background: linear-gradient(0deg, hsla(0, 0%, 98%, 1) 0%, hsla(0, 0%, 100%, 1) 50%)	
+					padding: 3px 4px
+					z-index: 9 !important
+				.calc-input
+					margin-top: 20px
+					height: 60px
+					background-color: #FBFBFB
+					border-radius: 10px
+					outline: none
+					border: 1px solid #9da0a8
+					padding: 10px 15px
+					// font-size: 18px
+					width: 100%
+				.sum-container, .term-container, .rate-container
+					justify-content: space-between
+					.var-container
+						// padding: 0px 15px
+						justify-content: space-between !important
+						.var
+							background: #f7f7f7
+							padding: 20px 15px 18px 15px
+							border-radius: 10px
+							margin-top: 20px
+							height: 60px 
+							// font-size: 18px
+							&.active
+								background: $Main !important
+								color: white !important
+			.ind-calc
+				margin-top: 45px
+				margin-bottom: 20px
+				align-items: center
+				img
+					width: 25px
+					height: 25px
+					border-radius: 0 !important
+				a	
+					color: $Main
+					height: fit-content
+					border-bottom: 1px solid $Main
+					transition: .3s all ease
+					&:hover 
+						opacity: 0.69
+
+			p
+				color: $LightedBlack
+
+			.choose-kind-and-date
+
+				.param-name
+					transform: translate3d(12px, 28px, 0)
+					width: fit-content
+					background: linear-gradient(0deg, hsla(0, 0%, 98%, 1) 0%, hsla(0, 0%, 100%, 1) 50%)	
+					padding: 3px 4px
+					z-index: 9 !important
+				.input-date
+					.calc-input-date
+						width: 100%
+						height: 60px
+						background-color: #FBFBFB
+						border-radius: 10px
+						outline: none
+						border: 1px solid #9da0a8
+						padding: 10px 15px
+						// font-size: 18px
+
+	.calcblock-right
+		.p-result-payment
+			width: fit-content !important
+		align-items: center
+		justify-content: center
+		height: auto
+		position: relative
+		p
+			color: $White
+		.cover
+			background: $Main
+			background-size: cover
+			border-radius: 30px
+			width: 100%
+			height: 320px
+		.text-cover
+			position: absolute
+
+			.button
+				a
+					color: $DarkedMain
+				svg path
+					fill: $DarkedMain
+			.p-top
+				color: $White
+				// font-size: 28px
+				padding-left: 0 !important
+				font-weight: 300 !important
+			.div-result-payment
+				font-size: $baseFontSize * 2.5 
+				p 
+					font-size: $baseFontSize * 2.5 
+			.div-result-payment, .p-result-payment
+				display: flex 
+				align-items: baseline
+				color: $White!important
+				font-weight: 600
+				// font-size: 42px
+
+@media ( max-width: 800px )
+
+	.calcblock
+		margin-top: 0
+		padding-bottom: 20px
+		padding-top: 20px 
+		.calc-input
+			height: 50px 
+			// color: #fff !important
+		.param-name
+			transform: translate3d(16px, 43px, 0) !important
+		.div-result-payment
+			font-size: $baseFontSize * 2 !important
+			p 
+				font-size: $baseFontSize * 2 !important
+		.choose-kind-and-date
+			flex-direction: column 
+			.menu
+				z-index: 800 
+				a
+					// font-size: 18px !important
+			.input-date, .menu
+				width: 100% 
+				button
+					height: 50px 
+				input 
+					height: 50px 
+			.param-name
+				transform: translate3d(13px, 24px, 0) !important
+			.calc-input-date
+				height: 50px 
+		.calc-input
+			width: 100% 
+		.sum-container, .term-container, .rate-container
+			flex-direction: column 
+			.var-container
+				width: 100% 
+				.var
+					height: 50px 
+					padding: 14px 15px 
+		.calcblock-left
+			.top-text
+				p
+					width: 100%
+		.calcblock-right
+			margin-top: 20px 
+			.text-cover
+				.div-result
+					margin-top: 5px 
+					margin-bottom: 5px 
+
+		.calcblock-left, .calcblock-right
+			width: 100%
+			margin-bottom: 20px 
+		.sum, .term, .rate
+			margin-top: 0px !important 
+			input
+				margin-top: 5px 
+		.top-text
+			margin-bottom: 15px 
+			p
+				margin-top: 10px
+
+		.text-cover
+			.p-result
+				margin-top: 5px 
+				margin-bottom: 15px 
+		.cover
+			width: 100% 
+			height: 230px !important
+			border-radius: 20px  !important
+		.button
+			a
+				padding: 12px 0 
+			svg
+				width: 21px 
+				padding: 1px 0 0 6px 
+		.ind-calc
+			img
+			margin-top: 50px 
+			margin-bottom: 40px 
+
+
+
+
+
+
+
+
+.fake-input
+	top: 50%
+	left: 28px
+	pointer-events: none
+
+.calc-input
+	// color: #fff !important
+.reset-input
+	opacity: 0
